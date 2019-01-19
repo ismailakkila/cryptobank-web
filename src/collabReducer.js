@@ -1,4 +1,4 @@
-var ciscosparkHelper = require("./ciscoSparkHelper");
+var ciscosparkHelper = require("./ciscosparkHelper");
 
 var UPDATECOLLABSESSION = "UPDATECOLLABSESSION";
 
