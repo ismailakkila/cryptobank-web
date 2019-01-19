@@ -1,0 +1,35 @@
+{
+  "name": "cryptobank-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ciscosparkHelper.js",
+  "scripts": {
+    "build": "browserify -g browserify-css -t [ babelify --presets [react] ] -e src/app.js -o public/bundle.js",
+    "postinstall": "npm run build",
+    "start": "npm run build && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify-css": "^0.14.0",
+    "ciscospark": "^1.32.23",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "moment": "^2.23.0",
+    "password-validator": "^4.1.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-draggable": "^3.1.1",
+    "react-qr-reader": "^2.1.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-react": "^0.84.0",
+    "socket.io-client": "^2.2.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
