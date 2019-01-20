@@ -338,7 +338,7 @@ class Login extends React.Component {
 
   handleQrScanError(err) {
     if (err) {
-      console.log(err);
+      console.error(err);
       this.setState({
         showCamera: false,
         validInitialToken: false

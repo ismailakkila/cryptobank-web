@@ -202,10 +202,7 @@ class Dashboard extends React.Component {
     var {collab, startVideoChat} = this.props;
     this.setState({openVideoModal: true});
     if (!collab.call) {
-      startVideoChat(collab.webexClientTools)
-      .then(function() {
-        console.log("Registered with Webex");
-      });
+      startVideoChat(collab.webexClientTools);
     }
   }
 
