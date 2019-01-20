@@ -18,6 +18,7 @@ class Cryptobank extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     var loginFlow = this.state.loginFlow;
     if (loginFlow) {
       return (
