@@ -52,7 +52,7 @@ class Collaboration extends React.Component {
     var {webexTeamsClientStatus, webexTeamsServerStatus, webexTeamsNotAvailable} = this.state;
     var {socket, user, createCollabSession, collab} = this.props;
 
-    if (socket && user.webexTeamsToken) {
+    if (socket.connected && user.webexTeamsToken) {
       if (
         webexTeamsServerStatus === null &&
         webexTeamsClientStatus === null &&
