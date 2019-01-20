@@ -10,6 +10,7 @@ var socketConnectionTimeout = 10000;
 
 var connect = function(dispatch) {
   return new Promise(function(resolve, reject) {
+    console.log(socket.request.xdomain);
     var client = socket.connect(backendUrl);
     setTimeout(function() {
       reject("Socket connection timed after: " + socketConnectionTimeout + "ms");
