@@ -39,7 +39,6 @@ var httpClient = function(method, url, input=null) {
             }
           }
         };
-        req.setRequestHeader("Access-Control-Allow-Origin", "no-cors");
         req.send();
       case "POST":
         var req = new XMLHttpRequest();
@@ -72,7 +71,6 @@ var httpClient = function(method, url, input=null) {
           }
         };
         req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        req.setRequestHeader("Access-Control-Allow-Origin", "no-cors");
         req.send(input);
     }
   });
