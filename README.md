@@ -1,5 +1,5 @@
 # CryptoBank Web
-CryptoBank is a fictional banking app intended to showcase [Cisco Webex Teams](https://www.webex.com/team-collaboration.html) cloud collaboration features with integrated client chat, voice and video. This is the web frontend application that will connect to the (CryptoBank backend service)[https://github.com/ismailakkila/cryptobank-backend].
+CryptoBank is a fictional banking app intended to showcase [Cisco Webex Teams](https://www.webex.com/team-collaboration.html) cloud collaboration features with integrated client chat, voice and video. This is the web frontend application that will connect to the [CryptoBank backend service](https://github.com/ismailakkila/cryptobank-backend).
 
 The app is designed to integrate with Project Onboard. Project Onboard is an experimental web application that allows you to create, view, modify and delete user information via an administration portal. You can check it out [here](https://github.com/ismailakkila/projectonboard).
 
