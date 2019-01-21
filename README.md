@@ -23,9 +23,9 @@ Video Chat - Window
 
 ## Prerequisites
 You will need to setup the following:
-[Project Onboard](https://github.com/ismailakkila/projectonboard)
-[CryptoBank Backend](https://github.com/ismailakkila/cryptobank-backend)
-[Cisco Webex Teams Developer Account](https://developer.webex.com)
+* [Project Onboard](https://github.com/ismailakkila/projectonboard)
+* [CryptoBank Backend](https://github.com/ismailakkila/cryptobank-backend)
+* [Cisco Webex Teams Developer Account](https://developer.webex.com)
 
 Modify src/backendUrl.js to specify your CryptoBank Backend URL.
 
