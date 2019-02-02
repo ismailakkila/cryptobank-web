@@ -17,9 +17,11 @@ var connect = function(dispatch) {
     client.on("connect", function() {
       updateSocket(client)(dispatch);
       subscriptions.forEach(function(subscription) {
-        client.on(subscription, function(data) {
-          updateCryptoPriceFeed(data)(dispatch);
-        });
+        if (subscription === "cryptoPriceFeed") {
+          client.on(subscription, function(data) {
+            updateCryptoPriceFeed(data)(dispatch);
+          });
+        }
       });
       resolve(true);
       return;

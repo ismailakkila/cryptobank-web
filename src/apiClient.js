@@ -41,6 +41,7 @@ var httpClient = function(method, url, input=null) {
         };
         req.withCredentials = true;
         req.send();
+        break;
       case "POST":
         var req = new XMLHttpRequest();
         if (input) {
@@ -74,6 +75,7 @@ var httpClient = function(method, url, input=null) {
         req.withCredentials = true;
         req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         req.send(input);
+        break;
     }
   });
 };
