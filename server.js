@@ -5,7 +5,7 @@ var moment = require("moment");
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.listen(port, function(err) {
+app.listen(port, "0.0.0.0", function(err) {
   if (err) {
     console.log(moment().toISOString() + " - [Node Express] Failed to start server on TCP: " + port);
     console.log(moment().toISOString() + " - [Node Express] Error: " + err);
